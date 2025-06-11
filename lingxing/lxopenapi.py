@@ -165,6 +165,7 @@ class LXOpenAPI:
 
         if req_body and 'Content-Type' not in headers:
             headers['Content-Type'] = 'application/json'
+
         return await request(
             method, req_url, params=req_params,
             headers=headers,
